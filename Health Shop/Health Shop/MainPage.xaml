@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Health_Shop.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid BackgroundColor="#1E1E1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="0" BackgroundColor="#d34817" Padding="10" CornerRadius="0">
+            <Label Text="HEALTH SHOP" HorizontalTextAlignment="Center" TextColor="White" FontSize="32" FontFamily="Panton-BlackCaps.otf"/>
+        </Frame>
+
+        <Entry Grid.Row="1" x:Name="entrySearch" Placeholder="поиск: scan, штрих код товара, Exxx" PlaceholderColor="#888888" TextColor="White" Margin="10,0,10,0" FontFamily="Montserrat-Medium.ttf"></Entry>
+
+        <ScrollView Grid.Row="2" HorizontalScrollBarVisibility="Default">
+            <StackLayout x:Name="StackLayoutMainInfo">
+                
+                <Label Text="Название:" TextColor="White" Padding="10,0,0,0" FontFamily="Montserrat-Medium.ttf"/>
+                <Label x:Name="labelProductTitle" Text=""
+                       TextColor="White" Padding="20,-2,10,0" FontFamily="Montserrat-Light.ttf"/>
+
+                <Label Text="Состав:" TextColor="White" Padding="10,0,0,0" FontFamily="Montserrat-Medium.ttf"/>
+                <Label x:Name="labelProductCompositions" Text=""
+                       TextColor="White" Padding="20,-2,10,0" FontFamily="Montserrat-Light.ttf"/>
+
+                <BoxView Color="White" WidthRequest="100" HeightRequest="1" Margin="10,5,10,5"/>
+
+            </StackLayout>
+        </ScrollView>
+
+        <Button Grid.Row="3" x:Name="buttonScan" VerticalOptions="EndAndExpand" Text="Scan" BackgroundColor="#cab0a8" FontFamily="Montserrat-Medium.ttf" CornerRadius="0"
+                Clicked="ButtonScan_Clicked"></Button>
+
+    </Grid>
+
+</ContentPage>

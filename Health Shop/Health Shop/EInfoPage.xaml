@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Health_Shop.EInfoPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="#1E1E1E">
+
+        <Frame Grid.Row="0" BackgroundColor="#d34817" Padding="10" CornerRadius="0">
+            <Label x:Name="labelHeader" Text="E621" HorizontalTextAlignment="Center" TextColor="White" FontSize="32" FontFamily="Panton-BlackCaps.otf"/>
+        </Frame>
+
+        <ScrollView BackgroundColor="#1E1E1E">
+            <StackLayout>
+
+                <Label x:Name="labelName" Text="Глутамат натрия"
+                   TextColor="White" FontFamily="Montserrat-SemiBold.ttf" FontSize="22" HorizontalTextAlignment="Center" />
+                <Label x:Name="labelOtherNames" Text="E621, Глутамат натрия, Глютамат натрия"
+                   TextColor="Gray" FontFamily="Montserrat-SemiBold.ttf" FontSize="16" HorizontalTextAlignment="Center" Padding="10,0,10,0" />
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Опасность:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Grid.Column="0" Padding="10,0,0,0"/>
+                    <Label x:Name="labelDanger" Text="низкая"
+                       TextColor="#9CBA25" FontSize="16" FontFamily="Montserrat-Light.ttf" Grid.Column="1" Padding="0,0,0,0"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Происхождение:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Grid.Column="0" Padding="10,0,0,0"/>
+                    <Label x:Name="labelOrigin" Text="растительное"
+                       TextColor="#9CBA25" FontSize="16" FontFamily="Montserrat-Light.ttf" Grid.Column="1" Padding="0,0,0,0"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Категория:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Grid.Column="0" Padding="10,0,0,0"/>
+                    <Label x:Name="labelCategory" Text="усилители вкуса и аромата" 
+                       FontSize="16" TextColor="White" FontFamily="Montserrat-Light.ttf" Grid.Column="1" Padding="0,0,0,0"/>
+                </Grid>
+
+                <Label Text="Общая информация:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Padding="10,0,0,0"/>
+                <Label x:Name="labelGeneralInformation" Text="Пищевая добавка E621 - глутамат натрия представляет собой соль натрия, встречающуюся в природе в неосновных аминокислотах глутаминовой кислоты. В пищевой промышленности глутамат натрия используется в качестве усилителя вкуса."
+                   TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="20,0,0,0"/>
+
+                <Label Text="Основные параметры:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Padding="10,0,0,0"/>
+                <Label x:Name="labelMainParameters" Text="Вкус – нет&#10;Цвет – белый&#10;Консистенция – твердый кристаллический порошок"
+                   TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="20,0,0,0"/>
+
+                <Label Text="Влияние на организм:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Padding="10,0,0,0"/>
+                <Label x:Name="labeInfluenceOnTheBodyl" Text="В небольших количествах глутамат натрия можно считать безопасной добавкой. Но при систематическом его употреблении в больших количествах у человека может наблюдаться ряд побочных эффектов."
+                   TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="20,0,0,0"/>
+
+                <Label Text="Польза:" TextColor="#209E20" FontSize="16" FontFamily="Montserrat-Regular.ttf" Padding="20,0,0,0" FontAttributes="Bold"/>
+                <Label x:Name="labelGoods" Text="Глутамат натрия, содержащийся в натуральных продуктах имеет благотворное влияние на пищеварительную систему: стимулирует выделение желудочного сока, улучшает перистальтику кишечника, его моторику, укрепляет иммунитет, не повышает артериальное давление, как поваренная соль (поэтому употребление натурального глутамата натрия актуально для людей гипертонией), нейтрализует вредное воздействие аммиака, способствуя его выводу из организма, помогает лечить болезни центральной нервной системы, способствует выработке белка глутатиона, который поддерживает иммунитет."
+                   TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="30,0,0,0"/>
+
+                <Label Text="Вред:" TextColor="#F45540" FontSize="16" FontFamily="Montserrat-Regular.ttf" Padding="20,0,0,0" FontAttributes="Bold"/>
+                <Label x:Name="labelPoor" Text="При употреблении большого количества глутамата натрия могут возникать такие явления, как: оловная боль, проблемы с желудком, кишечником, набор массы тела (возможно ожирение), аллергические реакции, повышенное потоотделение, усиленное сердцебиение, боли в груди, покраснение лица и шеи, общая слабость."
+                   TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="30,0,0,0"/>
+
+                <Label Text="Использование:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Padding="10,0,0,0"/>
+                <Label x:Name="labelUsage" Text="В пищевой промышленности пищевая добавка E621 применяется для усиления вкуса: приправ, бульонных кубиков. Мясных изделий - колбас, сосисок, фарша, сарделек. Соусов, кетчупов, майонезов. Консервированных и замороженных полуфабрикатов. Картофельных чипсов. Еды из ресторанов быстрого питания. Полуфабрикатов - замороженных блинчиков, чебуреков, котлет. Рыбных, мясных, фруктовых консервов. Сухариков и снеков."
+                           TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="20,0,0,0"/>
+
+                <Label Text="Законодательство:" TextColor="White" FontSize="16" FontFamily="Montserrat-Medium.ttf" Padding="10,0,0,0"/>
+                <Label x:Name="labelLegislation" Text="Производитель обязан указывать наличие глутамата натрия в составе продукта. При этом пищевая добавка E621 относится к числу разрешенных практически во всех странах мира."
+                           TextColor="White" FontSize="16" FontFamily="Montserrat-Light.ttf" Padding="20,0,0,20"/>
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

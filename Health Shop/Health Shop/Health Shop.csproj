@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Montserrat\Montserrat-Black.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-BlackItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-Bold.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-BoldItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-ExtraBold.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-ExtraLight.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-Italic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-Light.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-LightItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-Medium.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-MediumItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-Regular.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-SemiBold.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-Thin.ttf" />
+    <None Remove="Fonts\Montserrat\Montserrat-ThinItalic.ttf" />
+    <None Remove="Fonts\Panton\Panton-BlackCaps.otf" />
+    <None Remove="Fonts\Panton\Panton-BlackitalicCaps.otf" />
+    <None Remove="Fonts\Panton\Panton-LightCaps.otf" />
+    <None Remove="Fonts\Panton\Panton-LightitalicCaps.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Black.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-BlackItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-BoldItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-ExtraBold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-ExtraLight.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Italic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Light.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-LightItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-MediumItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-SemiBold.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-Thin.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat\Montserrat-ThinItalic.ttf" />
+    <EmbeddedResource Include="Fonts\Panton\Panton-BlackCaps.otf" />
+    <EmbeddedResource Include="Fonts\Panton\Panton-BlackitalicCaps.otf" />
+    <EmbeddedResource Include="Fonts\Panton\Panton-LightCaps.otf" />
+    <EmbeddedResource Include="Fonts\Panton\Panton-LightitalicCaps.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2244" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>S:\Install\Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="EInfoPage.xaml.cs">
+      <DependentUpon>EInfoPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="EInfoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
